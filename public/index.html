@@ -1,27 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Web site created using create-snowpack-app" />
-    <link rel="stylesheet" type="text/css" href="/index.css" />
-    <title>Snowpack App</title>
-  </head>
-  <body>
-    <img id="img" src="/logo.svg" />
-    <canvas id="canvas"></canvas>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <script type="module" src="/dist/index.js"></script>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume-Builder</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <main>
+    <section class="section-1">
+      <nav>
+        <div class="nav-main">
+          <div class="nav-logo">
+            <a href="https://github.com/apoorvapendse" target="_blank"><img src="https://avatars.githubusercontent.com/u/102853901?v=4" style="height: 40px;width: 40px;" alt="">
+              <span>Contact Developer</span></a>
+          </div>
+         
+          <ul>
+          </ul>
+          <div class="nav-mobile-menu" id="nav-mobile-menu">
+            <img src="https://rvs-hosterr-waitlist-page.vercel.app/Assets/Hamburger-Menu.svg" alt="">
+          </div>
+        </div>
+      </nav>
+  
+      <nav class="mobile-menu">
+        <div class="mobile-menu-main">
+         
+          <ul>
+            <li><a href="./choose.html">Create My Resume</a></li>
+          </ul>
+        </div>
+      </nav>
+  
+      <div class="section-1-main">
+        <div class="section-1-content">
+          <h1 class="section-1-title">Create Your Resume in less than 5 minutes.</h1>
+          <p class="section-1-desc">With Apoorva's Resume Builder You can create an outstanding resume in as less as 5 mintues!</p>
+          <a href="./choose.html" style="text-decoration: none;" class="section-1-form">
+            <button>Shut Up And Make My Resume</button>
+          </a>
+          
+        </div>
+        <div class="section-1-imgs">
+          <div class="section-1-imgs-main">
+            <img src="https://rvs-hosterr-waitlist-page.vercel.app/Assets/Blue-Shape.svg" alt="">
+            <img src="https://rvs-hosterr-waitlist-page.vercel.app/Assets/Pink-Shape.svg" alt="">
+            <img src="https://rvs-hosterr-waitlist-page.vercel.app/Assets/Purple-Shape.svg" alt="">
+            <img src="data:image/jpeg;base64,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" alt="">
+          </div>
+        </div>
+      </div>
+  
+      <footer>
+        <ul>
+        
+          <li><a href="https://instagram.com/_apoorvuh_" target="_blank">Instagram</a></li>
+        </ul>
+        <div class="user-content">
+          <div class="user-img">
+            <img src="https://avatars.githubusercontent.com/u/102853901?v=4" alt="">
+          </div>
+          <div class="user-details">
+            <h5>Have any questions?</h5>
+            <h4><a href="#">Talk to the Developer</a></h4>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+<script>
+  const navEl = document.getElementById("nav-mobile-menu");
+    const nav = document.getElementsByTagName("nav");
+
+    navEl.addEventListener("click", () => {
+      nav[1].classList.toggle("active");
+    });
+</script>
+
+</body>
 </html>
