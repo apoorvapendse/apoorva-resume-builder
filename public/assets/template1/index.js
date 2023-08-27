@@ -13,6 +13,31 @@ const project2Link = document.getElementById('p2Link');
 const project3Link = document.getElementById('p3Link');
 const project4Link = document.getElementById('p4Link');
 
+console.log(personData);
+//exp names
+const expName1 = document.getElementById('expName1');
+const expName2 = document.getElementById('expName2');
+const expName3 = document.getElementById('expName3');
+expName1.innerText = personData.expname1;
+expName2.innerText = personData.expname2;
+expName3.innerText = personData.expname3;
+
+//exp descs
+const expDesc1 = document.getElementById('expDesc1');
+const expDesc2 = document.getElementById('expDesc2');
+const expDesc3 = document.getElementById('expDesc3');
+expDesc1.innerText = personData.expdesc1;
+expDesc2.innerText = personData.expdesc2;
+expDesc3.innerText = personData.expdesc3;
+
+//start data
+const expDate1 = document.getElementById('expDate1');
+const expDate2 = document.getElementById('expDate2');
+const expDate3 = document.getElementById('expDate3');
+expDate1.innerText = `${personData.expsd1} to ${personData.exped1}`;
+expDate2.innerText = `${personData.expsd2} to ${personData.exped2}`;
+expDate3.innerText = `${personData.expsd3} to ${personData.exped3}`;
+
 personName.innerText = personData.name;
 personAge.innerText = personData.age;
 personDesc.innerText = personData.description;
