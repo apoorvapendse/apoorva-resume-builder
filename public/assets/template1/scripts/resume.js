@@ -12,6 +12,12 @@ const project1Link = document.getElementById('p1Link');
 const project2Link = document.getElementById('p2Link');
 const project3Link = document.getElementById('p3Link');
 const project4Link = document.getElementById('p4Link');
+const skill1 = document.getElementById('skill1');
+const skill2 = document.getElementById('skill2');
+const skill3 = document.getElementById('skill3');
+const skill4 = document.getElementById('skill4');
+const skill5 = document.getElementById('skill5');
+const skill6 = document.getElementById('skill6');
 
 console.log(personData);
 //exp names
@@ -50,3 +56,18 @@ project1Link.setAttribute('href', personData.p1_link);
 project2Link.setAttribute('href', personData.p2_link);
 project3Link.setAttribute('href', personData.p3_link);
 project4Link.setAttribute('href', personData.p4_link);
+console.log('hellooo');
+
+//setting profile picture and skills
+let picture = document.getElementById('personPfp');
+console.log(personData.pictureURL);
+picture.setAttribute('src', personData.pictureURL);
+
+skill1.innerText = personData.skill1;
+skill2.innerText = personData.skill2;
+skill3.innerText = personData.skill3;
+skill4.innerText = personData.skill4;
+skill5.innerText = personData.skill5;
+skill6.innerText = personData.skill6;
+
+console.log(skill1, personData.skill1);
