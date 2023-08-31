@@ -45,7 +45,6 @@ function getData(form: any) {
   personData = Object.fromEntries(formData);
   localStorage.setItem('formdata', JSON.stringify(personData));
   insertData();
-  window.open('http://localhost:8080/assets/template1/index.html');
 }
 
 // plotData for form1

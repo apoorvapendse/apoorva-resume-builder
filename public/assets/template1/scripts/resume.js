@@ -50,15 +50,3 @@ project1Link.setAttribute('href', personData.p1_link);
 project2Link.setAttribute('href', personData.p2_link);
 project3Link.setAttribute('href', personData.p3_link);
 project4Link.setAttribute('href', personData.p4_link);
-
-//skills
-let { skill1, skill2, skill3, skill4, skill5, skill6 } = personData;
-document.getElementById('skill1').innerText = skill1;
-document.getElementById('skill2').innerText = skill2;
-document.getElementById('skill3').innerText = skill3;
-document.getElementById('skill4').innerText = skill4;
-document.getElementById('skill5').innerText = skill5;
-document.getElementById('skill6').innerText = skill6;
-
-//pfp
-document.getElementById('photo').setAttribute('src', personData.photo);
