@@ -71,3 +71,8 @@ skill5.innerText = personData.skill5;
 skill6.innerText = personData.skill6;
 
 console.log(skill1, personData.skill1);
+
+document.getElementById('printBtn').addEventListener('click', () => {
+  console.log('printing...');
+  html2pdf(document.getElementById('page-content'));
+});
